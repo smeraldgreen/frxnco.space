@@ -1,0 +1,41 @@
+<div class="toolbar">
+  <p>
+    <mat-toolbar style="background: #50c878; color: white;">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+  </p>
+</div>
+
+<div class="hi">
+  <div class="typewriter">
+    <h1>
+      <a class="typewrite" data-period="2000"
+        data-type='[ "Hi, Im Frank.", "I am Creative.", "I ❤ Design.", "I am a frontend dev." ]'>
+        <span class="wrap"></span>
+      </a>
+    </h1>
+  </div>
+</div>
+
+<div class="skills">
+  <mat-grid-list cols="1" rowHeight="2:1">
+    <h1>Skills</h1>
+  </mat-grid-list>
+</div>
+
+<div class="hobbies">
+  <mat-grid-list cols="1" rowHeight="2:1">
+    <h1>Hobbies</h1>
+  </mat-grid-list>
+</div>
+
+<router-outlet></router-outlet>

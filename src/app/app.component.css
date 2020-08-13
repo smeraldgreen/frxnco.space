@@ -1,0 +1,65 @@
+.hi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #50c878;
+    color: white;
+    text-shadow: 1px 1px grey;
+
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.hi h1 a{
+    font-size: 150%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  /* The typewriter cursor effect */
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #00ff00;
+    }
+  }
+  
+  @keyframes opacity-writer {
+    from,
+    to {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+.skills{
+    height: 100%;
+    background-color: pink;
+    color: white;
+}
+
+.hobbies{
+    height: 100%;
+    background-color:violet;
+    color: white;
+}
+
+
