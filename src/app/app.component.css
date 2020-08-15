@@ -3,6 +3,7 @@
 }
 
 .toolbar .mat-toolbar{
+  align-items: center;
   background: transparent;
 }
 .toolbar .icons a{
@@ -31,10 +32,11 @@
 }
 
 .home .moon img{
+  display: block;
+  position: relative;
   opacity: 1;
   width: 400px;
   animation: transportMoon 4s forwards;
-
 }
 
 .home .astronaut img{
@@ -136,6 +138,7 @@
 }
 
 .aboutme{
+  position: relative;
     height: 100%;
     background-color: pink;
     color: white;
