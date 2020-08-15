@@ -1,56 +1,140 @@
-.hi{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-color: #50c878;
+.body{
+  overflow: none;
+}
+
+.toolbar{
+  background-color: #000058;
+}
+
+.toolbar a{
+  color: white;
+  opacity: 0;
+  left: -20%;
+  margin: 2%;
+  border: none;
+  animation: apear 5s forwards;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.toolbar a:hover{
+  background-color: rgba(0, 0, 0, 0.158);
+  transform: scale(1.2);
+}
+
+@keyframes apear{
+  95% {
+    opacity: 1;
+    left: 3%;
+  }
+  98% {
+    opacity: 0.5;
+    left: 2%;
+  }
+  100% {
+    opacity: 1;
+    left: 4%;
+  }
+}
+
+.home{
+  height: 100%; 
+
+}
+
+
+.home .moon img{
+  opacity: 1;
+  width: 400px;
+  animation: transportMoon 4s forwards;
+
+}
+
+.home .astronaut img{
+  opacity: 0;
+  width: 200px;
+  animation: apearAstronaut 3s forwards, floatingAstronaut 2s ease alternate-reverse infinite;
+ 
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  100%{
+  transform: rotate(360deg);
+  }
+}
+
+@keyframes transportMoon{
+  0%
+  {
+    transform: translateY(200px);
+  }
+  100%
+  {
+    transform: translateY(100px);
+  }
+}
+
+
+@keyframes apearAstronaut{
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes floatingAstronaut{
+  0%
+  {
+    transform: translateY(-5px);
+  }
+  100%
+  {
+    transform: translateY(5px);
+  }
+}
+
+.home{  
+    background-color: #000058;
     color: white;
     text-shadow: 1px 1px grey;
-
 }
 
-.example-spacer {
-    flex: 1 1 auto;
-  }
 
-.hi h1 a{
+.home h1 a{
     font-size: 150%;
     font-family: 'Ubuntu', sans-serif;
+    opacity: 0;
+    animation: typewriteropacity 5s forwards;
 }
 
-/* The typing effect */
+.aboutme{
+  justify-content: center;
+  background-color: #000058;
+  color: white;
+  text-shadow: 1px 1px grey;
+}
 
-@keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
+.mat-stepper-horizontal {
+  width: 100%;
+}
+
+.mat-form-field {
+  width: 100%;
+  margin-top: 16px;
+}
+
+
+@keyframes typewriteropacity{
+  to{
+    opacity: 1;
   }
-  /* The typewriter cursor effect */
-  
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: #00ff00;
-    }
-  }
-  
-  @keyframes opacity-writer {
-    from,
-    to {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-.skills{
+}
+
+.aboutme{
     height: 100%;
     background-color: pink;
     color: white;
@@ -60,6 +144,11 @@
     height: 100%;
     background-color:violet;
     color: white;
+}
+
+.mat-step-header .mat-step-label.mat-step-label{
+  color:white!important;
+
 }
 
 

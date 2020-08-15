@@ -33,7 +33,7 @@ var TxtType = function(el, toRotate, period) {
         this.loopNum++;
         delta = 500;
         }
-
+ 
         setTimeout(function() {
         that.tick();
         }, delta);
@@ -51,6 +51,6 @@ var TxtType = function(el, toRotate, period) {
         // INJECT CSS
         var css = document.createElement("style");
         css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid white}";
+        css.innerHTML = ".mat-grid-list .typewrite > .wrap { border-right: 0.08em solid white}";
         document.body.appendChild(css);
     };

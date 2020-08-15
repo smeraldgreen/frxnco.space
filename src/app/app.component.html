@@ -1,41 +1,52 @@
-<div class="toolbar">
-  <p>
-    <mat-toolbar style="background: #50c878; color: white;">
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <span class="example-spacer"></span>
-      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon>favorite</mat-icon>
-      </button>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>share</mat-icon>
-      </button>
-    </mat-toolbar>
-  </p>
+<div>
+  <mat-toolbar class="toolbar">
+    <a mat-stroked-button href="https://www.google.com/" target="_blank">About Me</a>
+    <a mat-stroked-button href="https://www.google.com/" target="_blank">Skills</a>
+    <a mat-stroked-button href="https://www.google.com/" target="_blank">Linkedin</a>
+    <a mat-stroked-button href="https://www.google.com/" target="_blank">Contact</a>
+  </mat-toolbar>
 </div>
 
-<div class="hi">
-  <div class="typewriter">
-    <h1>
-      <a class="typewrite" data-period="2000"
-        data-type='[ "Hi, Im Frank.", "I am Creative.", "I ❤ Design.", "I am a frontend dev." ]'>
-        <span class="wrap"></span>
-      </a>
-    </h1>
-  </div>
-</div>
-
-<div class="skills">
-  <mat-grid-list cols="1" rowHeight="2:1">
-    <h1>Skills</h1>
+<div class="home">
+  <mat-grid-list cols="1" rowHeight="33.25%"> 
+    <mat-grid-tile>
+      <div class="astronaut">
+        <img src="assets/img/astronaut.png">
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="hi">
+        <h1>
+          <a class="typewrite" data-period="2000"
+            data-type='[ "Hi, Im Frank.", "Frontend Developer", "Creative", "Enjoy it" ]'>
+            <span class="wrap"></span>
+          </a>
+        </h1>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="moon">
+        <img src="assets/img/moon.png">
+      </div>
+    </mat-grid-tile>
   </mat-grid-list>
 </div>
 
-<div class="hobbies">
-  <mat-grid-list cols="1" rowHeight="2:1">
-    <h1>Hobbies</h1>
+<div class="aboutme">
+  <mat-grid-list cols="1" rowHeight="33%"> 
+    <mat-grid-tile>
+      <div class="">
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="">
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="">
+
+      </div>
+    </mat-grid-tile>
   </mat-grid-list>
 </div>
-
 <router-outlet></router-outlet>
