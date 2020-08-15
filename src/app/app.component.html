@@ -1,13 +1,14 @@
-<div>
-  <mat-toolbar class="toolbar">
-    <a mat-stroked-button href="https://www.google.com/" target="_blank">About Me</a>
-    <a mat-stroked-button href="https://www.google.com/" target="_blank">Skills</a>
-    <a mat-stroked-button href="https://www.google.com/" target="_blank">Linkedin</a>
-    <a mat-stroked-button href="https://www.google.com/" target="_blank">Contact</a>
-  </mat-toolbar>
-</div>
+
 
 <div class="home">
+  <div class="toolbar" >
+    <mat-toolbar class="icons">
+      <a mat-stroked-button href="https://www.google.com/" target="_blank">About Me</a>
+      <a mat-stroked-button href="https://www.google.com/" target="_blank">Skills</a>
+      <a mat-stroked-button href="https://www.google.com/" target="_blank">Linkedin</a>
+      <a mat-stroked-button href="https://www.google.com/" target="_blank">Contact</a>
+    </mat-toolbar>
+  </div>
   <mat-grid-list cols="1" rowHeight="33.25%"> 
     <mat-grid-tile>
       <div class="astronaut">
@@ -32,7 +33,7 @@
   </mat-grid-list>
 </div>
 
-<div class="aboutme">
+<!-- <div class="aboutme">
   <mat-grid-list cols="1" rowHeight="33%"> 
     <mat-grid-tile>
       <div class="">
@@ -48,5 +49,5 @@
       </div>
     </mat-grid-tile>
   </mat-grid-list>
-</div>
+</div> -->
 <router-outlet></router-outlet>

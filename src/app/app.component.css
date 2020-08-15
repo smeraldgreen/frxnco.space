@@ -2,11 +2,10 @@
   overflow: none;
 }
 
-.toolbar{
-  background-color: #000058;
+.toolbar .mat-toolbar{
+  background: transparent;
 }
-
-.toolbar a{
+.toolbar .icons a{
   color: white;
   opacity: 0;
   left: -20%;
@@ -14,33 +13,22 @@
   border: none;
   animation: apear 5s forwards;
   font-family: 'Ubuntu', sans-serif;
+
 }
 
 .toolbar a:hover{
-  background-color: rgba(0, 0, 0, 0.158);
   transform: scale(1.2);
 }
 
 @keyframes apear{
-  95% {
-    opacity: 1;
-    left: 3%;
-  }
-  98% {
-    opacity: 0.5;
-    left: 2%;
+  50% {
+    left: 5%;
   }
   100% {
     opacity: 1;
-    left: 4%;
+    left: 0%;
   }
 }
-
-.home{
-  height: 100%; 
-
-}
-
 
 .home .moon img{
   opacity: 1;
@@ -89,18 +77,31 @@
 @keyframes floatingAstronaut{
   0%
   {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }
   100%
   {
-    transform: translateY(5px);
+    transform: translateY(10px);
   }
 }
 
 .home{  
-    background-color: #000058;
+    height: 100%;
+    background-size: cover;
+    background-image: url(/assets/img/space.png);
+    background-color: black;
     color: white;
     text-shadow: 1px 1px grey;
+    animation: spaceMove 15s ease infinite;
+}
+
+@keyframes spaceMove{
+  50%{
+    background-position-y: 10%;
+  }
+  100%{
+    background-size: -10%;
+  }
 }
 
 
@@ -115,7 +116,7 @@
   justify-content: center;
   background-color: #000058;
   color: white;
-  text-shadow: 1px 1px grey;
+  text-shadow: 2px 2px rgb(0, 0, 0);
 }
 
 .mat-stepper-horizontal {
