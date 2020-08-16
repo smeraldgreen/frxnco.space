@@ -41,15 +41,15 @@
   background-color: black;
   color: white;
   text-shadow: 1px 1px grey;
-  animation: spaceMove 15s ease infinite;
+  animation: spaceMove 10s alternate-reverse infinite;
 }
 
 @keyframes spaceMove{
 50%{
-  background-position-y: 10%;
+  background-position-y: 15px;
 }
 100%{
-  background-size: -10%;
+  background-size: -15px;
 }
 }
 
