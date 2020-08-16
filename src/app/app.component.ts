@@ -22,6 +22,7 @@ export interface Tile {
 
 
 export class AppComponent {
+  
   title = 'frxnco.space';
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
@@ -29,11 +30,5 @@ export class AppComponent {
   constructor(private _formBuilder: FormBuilder) {}
 
   ngOnInit() {
-    this.firstFormGroup = this._formBuilder.group({
-      firstCtrl: ['', Validators.required]
-    });
-    this.secondFormGroup = this._formBuilder.group({
-      secondCtrl: ['', Validators.required]
-    });
   }
 }

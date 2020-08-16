@@ -32,10 +32,17 @@
 }
 
 .home .moon img{
-  display: block;
-  position: relative;
   opacity: 1;
   width: 400px;
+  animation: transportMoon 4s forwards;
+}
+
+.home .rocket img{
+  opacity: 1;
+  width: 125px;
+  position: absolute;
+  top: -30%;
+  left: 50%;
   animation: transportMoon 4s forwards;
 }
 
@@ -61,10 +68,12 @@
 @keyframes transportMoon{
   0%
   {
+    opacity: 0;
     transform: translateY(200px);
   }
   100%
   {
+    opacity: 1;
     transform: translateY(100px);
   }
 }

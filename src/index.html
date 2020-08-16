@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 </head>
-<body class="mat-typography" style="background-color: transparent;" onload="window">
+<body *ngIf="angular.element(document).ready()" class="mat-typography" style="background-color: transparent;">
   <app-root></app-root>
 </body>
 </html>
