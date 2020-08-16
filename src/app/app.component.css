@@ -37,7 +37,7 @@
 .home{  
   height: 100%;
   background-size: cover;
-  background-image: url(/assets/img/space2.jpg);
+  background-image: url(/assets/img/space3.jpg);
   background-color: black;
   color: white;
   text-shadow: 1px 1px grey;
@@ -46,10 +46,10 @@
 
 @keyframes spaceMove{
 50%{
-  background-position: 5px;
+  background-position: 10px;
 }
 100%{
-  background-position: -5px
+  background-position: -10px
 }
 }
 
