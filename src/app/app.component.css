@@ -6,19 +6,16 @@
   align-items: center;
   background: transparent;
 }
+
 .toolbar .icons a{
   color: white;
   opacity: 0;
   left: -20%;
   margin: 2%;
   border: none;
-  animation: apear 5s forwards;
+  animation: apear 3s forwards;
+  animation-delay: 3s;
   font-family: 'Ubuntu', sans-serif;
-
-}
-
-.toolbar a:hover{
-  transform: scale(1.2);
 }
 
 @keyframes apear{
@@ -31,51 +28,50 @@
   }
 }
 
+
+.toolbar a:hover{
+  transform: scale(1.2);
+}
+
+
+.home{  
+  height: 100%;
+  background-size: cover;
+  background-image: url(/assets/img/space2.jpg);
+  background-color: black;
+  color: white;
+  text-shadow: 1px 1px grey;
+  animation: spaceMove 15s ease infinite;
+}
+
+@keyframes spaceMove{
+50%{
+  background-position-y: 10%;
+}
+100%{
+  background-size: -10%;
+}
+}
+
+
+.home h1 a{
+  font-size: 150%;
+  font-family: 'Ubuntu', sans-serif;
+  opacity: 0;
+  animation: typewriteropacity 5s forwards;
+  animation-delay: 2s;
+}
+
+@keyframes typewriteropacity{
+  to{
+    opacity: 1;
+  }
+}
+
 .home .moon img{
   opacity: 1;
   width: 400px;
-  animation: transportMoon 4s forwards;
-}
-
-.home .rocket img{
-  opacity: 1;
-  width: 125px;
-  position: absolute;
-  top: -30%;
-  left: 50%;
-  animation: transportRocket 4s forwards;
-}
-
-.home .astronaut img{
-  opacity: 0;
-  width: 200px;
-  animation: apearAstronaut 3s forwards, floatingAstronaut 2s ease alternate-reverse infinite;
- 
-}
-
-@keyframes rotate{
-  0%{
-    transform: rotate(0deg);
-  }
-  50%{
-    transform: rotate(180deg);
-  }
-  100%{
-  transform: rotate(360deg);
-  }
-}
-
-@keyframes transportRocket{
-  0%
-  {
-    opacity: 0;
-    transform: translateY(-200px);
-  }
-  100%
-  {
-    opacity: 1;
-    transform: translateY(100px);
-  }
+  animation: transportMoon 1s forwards;
 }
 
 @keyframes transportMoon{
@@ -89,6 +85,35 @@
     opacity: 1;
     transform: translateY(100px);
   }
+}
+
+.home .rocket img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 125px;
+  position: absolute;
+  left: 45%;
+  top: -30%;
+  opacity: 0;
+  animation: transportRocket 1s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes transportRocket{
+  100%
+  {
+    opacity: 1;
+    transform: translateY(100px);
+  }
+}
+
+.home .astronaut img{
+  opacity: 0;
+  width: 200px;
+  animation-delay: 4s;
+  animation: apearAstronaut 3s forwards, floatingAstronaut 2s ease alternate-reverse infinite;
+  animation-delay: 2s;
 }
 
 
@@ -109,32 +134,7 @@
   }
 }
 
-.home{  
-    height: 100%;
-    background-size: cover;
-    background-image: url(/assets/img/space.png);
-    background-color: black;
-    color: white;
-    text-shadow: 1px 1px grey;
-    animation: spaceMove 15s ease infinite;
-}
 
-@keyframes spaceMove{
-  50%{
-    background-position-y: 10%;
-  }
-  100%{
-    background-size: -10%;
-  }
-}
-
-
-.home h1 a{
-    font-size: 150%;
-    font-family: 'Ubuntu', sans-serif;
-    opacity: 0;
-    animation: typewriteropacity 5s forwards;
-}
 
 .aboutme{
   justify-content: center;
@@ -152,12 +152,11 @@
   margin-top: 16px;
 }
 
+.mat-step-header .mat-step-label.mat-step-label{
+  color:white!important;
 
-@keyframes typewriteropacity{
-  to{
-    opacity: 1;
-  }
 }
+
 
 .aboutme{
   position: relative;
@@ -166,15 +165,6 @@
     color: white;
 }
 
-.hobbies{
-    height: 100%;
-    background-color:violet;
-    color: white;
-}
 
-.mat-step-header .mat-step-label.mat-step-label{
-  color:white!important;
-
-}
 
 
