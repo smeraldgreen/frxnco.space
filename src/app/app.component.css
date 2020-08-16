@@ -2,6 +2,7 @@
   overflow: none;
 }
 
+
 .toolbar .mat-toolbar{
   align-items: center;
   background: transparent;
@@ -13,12 +14,12 @@
   left: -20%;
   margin: 2%;
   border: none;
-  animation: apear 3s forwards;
+  animation: iconsAnimation 3s forwards;
   animation-delay: 3s;
   font-family: 'Ubuntu', sans-serif;
 }
 
-@keyframes apear{
+@keyframes iconsAnimation{
   50% {
     left: 5%;
   }
@@ -28,28 +29,28 @@
   }
 }
 
-
 .toolbar a:hover{
   transform: scale(1.2);
 }
 
-
 .home{  
   height: 100%;
   background-size: cover;
-  background-image: url(/assets/img/space3.jpg);
+  background-image: url(/assets/img/space.jpg);
   background-color: black;
   color: white;
   text-shadow: 1px 1px grey;
-  animation: spaceMove 10s alternate-reverse infinite;
+  animation: spaceMove 5s ease alternate-reverse infinite;
 }
 
 @keyframes spaceMove{
 50%{
-  background-position: 10px;
+  background-position: 1%;
+  background-color: green;
 }
 100%{
-  background-position: -10px
+  background-position: -1%;
+  background-color: pink;
 }
 }
 
@@ -64,6 +65,7 @@
 
 @keyframes typewriteropacity{
   to{
+
     opacity: 1;
   }
 }
@@ -105,7 +107,7 @@
   100%
   {
     opacity: 1;
-    width: 120px;
+    width: 130px;
     transform: translateY(100px);
   }
 }
@@ -114,7 +116,7 @@
   opacity: 0;
   width: 0px;
   animation-delay: 4s;
-  animation: apearAstronaut 3s forwards, floatingAstronaut 2s ease alternate-reverse infinite;
+  animation: apearAstronaut 2s forwards, floatingAstronaut 2s ease alternate-reverse infinite;
   animation-delay: 2s;
 }
 
@@ -139,26 +141,7 @@
 
 
 
-.aboutme{
-  justify-content: center;
-  background-color: #000058;
-  color: white;
-  text-shadow: 2px 2px rgb(0, 0, 0);
-}
 
-.mat-stepper-horizontal {
-  width: 100%;
-}
-
-.mat-form-field {
-  width: 100%;
-  margin-top: 16px;
-}
-
-.mat-step-header .mat-step-label.mat-step-label{
-  color:white!important;
-
-}
 
 
 .aboutme{
