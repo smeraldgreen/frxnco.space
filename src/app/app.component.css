@@ -46,10 +46,10 @@
 
 @keyframes spaceMove{
 50%{
-  background-position-y: 15px;
+  background-position-x: 15px;
 }
 100%{
-  background-size: -15px;
+  background-position-x: -15px;
 }
 }
 
