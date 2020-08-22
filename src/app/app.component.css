@@ -2,21 +2,19 @@
   overflow: none;
 }
 
-
-.toolbar .mat-toolbar{
+.buttons a{
+  display: flex;
+  justify-content: center;
   align-items: center;
-  background: transparent;
-}
-
-.toolbar .icons a{
   color: white;
   opacity: 0;
-  left: -20%;
+  left: -30%;
   margin: 2%;
   border: none;
   animation: iconsAnimation 3s forwards;
   animation-delay: 3s;
   font-family: 'Ubuntu', sans-serif;
+  background-color: rgba(0, 0, 0, 0.753);
 }
 
 @keyframes iconsAnimation{
@@ -29,43 +27,46 @@
   }
 }
 
-.toolbar a:hover{
-  transform: scale(1.2);
+.buttons a:hover{
+  background-color: #50c878;
 }
 
 .home{  
   height: 100%;
   background-size: cover;
-  background-image: url(/assets/img/space.jpg);
+  background-image: url(/assets/img/space.png);
   background-color: black;
   color: white;
   text-shadow: 1px 1px grey;
-  animation: spaceMove 5s ease alternate-reverse infinite;
+  animation: spaceMove 5s ease alternate infinite;
+  box-shadow: 10px 10px 8px #888888
 }
 
 @keyframes spaceMove{
 50%{
-  background-position: 1%;
-  background-color: green;
+  background-position: 0.1%;
+
 }
 100%{
-  background-position: -1%;
-  background-color: pink;
+  background-position: 0.1%;
 }
 }
 
 
 .home h1 a{
-  font-size: 150%;
-  font-family: 'Ubuntu', sans-serif;
+  font-size: 130%;
+  font-family: 'Russo One', sans-serif;
   opacity: 0;
+  transform: scale(0%);
   animation: typewriteropacity 5s forwards;
   animation-delay: 2s;
+  color:#f8f8ff;
+  text-shadow: 2px 2px  black;
 }
 
 @keyframes typewriteropacity{
   to{
-
+    transform: scale(1.2%);
     opacity: 1;
   }
 }
@@ -108,7 +109,7 @@
   {
     opacity: 1;
     width: 130px;
-    transform: translateY(100px);
+    transform: translateY(80px);
   }
 }
 
@@ -123,7 +124,7 @@
 
 @keyframes apearAstronaut{
   to{
-    width: 200px;
+    width: 150px;
     opacity: 1;
   }
 }
@@ -140,17 +141,18 @@
 }
 
 
-
-
-
-
 .aboutme{
   position: relative;
     height: 100%;
-    background-color: pink;
+    background-color: #50c878;
     color: white;
 }
 
+.example-card {
+  max-width: 400px;
+}
 
-
-
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
