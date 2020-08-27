@@ -54,3 +54,4 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".mat-grid-list .typewrite > .wrap { border-right: 0.08em solid white}";
         document.body.appendChild(css);
     };
+    
