@@ -2,17 +2,21 @@
   overflow: none;
 }
 
-.buttons a{
+.buttonsdiv{
   display: flex;
+}
+
+.buttons a{
+  display: block;
   justify-content: center;
   align-items: center;
   color: white;
   opacity: 0;
   left: -30%;
   margin: 2%;
-  border: none;
+  border-color: #50c878;
   animation: iconsAnimation 3s forwards;
-  animation-delay: 3s;
+  animation-delay: 5s;
   font-family: 'Ubuntu', sans-serif;
   background-color: rgba(0, 0, 0, 0.753);
 }
@@ -28,18 +32,12 @@
 }
 
 .buttons a:hover{
+  box-shadow: 2px 2px white;
   background-color: #50c878;
 }
 
 .home{  
   height: 100%;
-  background-size: cover;
-  background-color: black;
-  color: white;
-  overflow: hidden;
-  text-shadow: 1px 1px grey;
-  box-shadow: 10px 10px 8px #888888
-
 }
 
 @keyframes spaceMove{
@@ -54,8 +52,8 @@
   font-family: 'Russo One', sans-serif;
   opacity: 0;
   transform: scale(0%);
-  animation: typewriteropacity 5s forwards;
-  animation-delay: 2s;
+  animation: typewriteropacity 3s forwards;
+  animation: delay 2px;
   color:#f8f8ff;
   text-shadow: 2px 2px  black;
 }
@@ -87,34 +85,37 @@
 }
 
 .home .rocket img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 0px;
-  position: absolute;
-  left: 45%;
-  top: -30%;
+  width: 20px;
+  position: fixed;
+  transform: translate(400px, -1200px);
   opacity: 0;
-
-  animation: transportRocket 1s forwards;
+  animation: transportRocket 3s forwards;
   animation-delay: 1s;
 }
 
 @keyframes transportRocket{
+  99%
+  {
+    transform: translate(-199px, -29px);
+    position: fixed;
+    opacity: 0.99;
+    width: 145px;
+  }
   100%
   {
+    transform: translate(-200px, -30px);
+    position: absolute;
     opacity: 1;
-    width: 130px;
-    transform: translateY(80px);
+    width: 150px;
   }
 }
 
 .home .astronaut img{
+  
   opacity: 0;
   width: 0px;
-  animation-delay: 4s;
   animation: apearAstronaut 2s forwards, floatingAstronaut 2s ease alternate-reverse infinite;
-  animation-delay: 2s;
+  animation-delay: 3s;
 }
 
 
@@ -138,16 +139,19 @@
 
 
 .aboutme{
+
   width:100%;
   height:100%;
 }
 
 .example-card {
+  display: block;
+  margin: 0 auto;
+  position: relative;
   width: 30%;
   height: 50%;
   top: 25%;
-  margin: 0 auto;
-  position: relative;
+
 }
 
 .example-header-image {
